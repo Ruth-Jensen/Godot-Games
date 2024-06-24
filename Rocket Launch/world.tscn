@@ -1,0 +1,70 @@
+[gd_scene load_steps=8 format=3 uid="uid://sdciwu6gv2wj"]
+
+[ext_resource type="Script" path="res://world.gd" id="1_jkxm1"]
+[ext_resource type="Texture2D" uid="uid://vv42yv13jp8n" path="res://rocket_ship.png" id="1_kpwbr"]
+[ext_resource type="Texture2D" uid="uid://c3jpk5eqeww2k" path="res://rocket_ship_launch.png" id="3_ylwh5"]
+[ext_resource type="Texture2D" uid="uid://b5r1lvpeq182j" path="res://launch_button.png" id="4_eg36q"]
+
+[sub_resource type="Animation" id="Animation_1e8lw"]
+resource_name = "Launch"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Rocket:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(640, 517), Vector2(640, -180)]
+}
+
+[sub_resource type="Animation" id="Animation_mmnmm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Rocket:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(640, 517)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_babmh"]
+_data = {
+"Launch": SubResource("Animation_1e8lw"),
+"RESET": SubResource("Animation_mmnmm")
+}
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_jkxm1")
+
+[node name="Rocket" type="Sprite2D" parent="."]
+position = Vector2(640, 517)
+scale = Vector2(2, 2)
+texture = ExtResource("1_kpwbr")
+
+[node name="RocketFlare" type="Sprite2D" parent="Rocket"]
+visible = false
+position = Vector2(0, 16)
+texture = ExtResource("3_ylwh5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_babmh")
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 1033.0
+offset_top = 610.0
+offset_right = 1237.0
+offset_bottom = 677.0
+texture_normal = ExtResource("4_eg36q")
+stretch_mode = 5
+
+[connection signal="button_down" from="TextureButton" to="." method="_on_texture_button_button_down"]

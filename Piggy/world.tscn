@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1xxnhjmh0k6w"]
+
+[ext_resource type="PackedScene" uid="uid://bu77psdcime58" path="res://piggy.tscn" id="1_4maet"]
+[ext_resource type="PackedScene" uid="uid://bglegvukgtqx0" path="res://apple.tscn" id="2_q1yc2"]
+
+[node name="World" type="Node2D"]
+
+[node name="piggy" parent="." instance=ExtResource("1_4maet")]
+position = Vector2(143, 85)
+
+[node name="apple" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(71, 134)
+
+[node name="apple2" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(43, 86)
+
+[node name="apple3" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(90, 31)
+
+[node name="apple4" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(177, 153)
+
+[node name="apple5" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(268, 114)
+
+[node name="apple6" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(193, 61)
+
+[node name="apple7" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(290, 34)
+
+[node name="apple8" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(282, 157)
+
+[node name="apple9" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(206, 111)
+
+[node name="apple10" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(20, 161)
+
+[node name="apple11" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(25, 25)
+
+[node name="apple12" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(160, 21)
+
+[node name="apple13" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(284, 71)
+
+[node name="apple14" parent="." instance=ExtResource("2_q1yc2")]
+position = Vector2(112, 157)

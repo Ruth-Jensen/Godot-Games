@@ -1,0 +1,173 @@
+[gd_scene load_steps=7 format=3 uid="uid://bttyulja8qsnc"]
+
+[ext_resource type="PackedScene" uid="uid://dm272mya6hdcw" path="res://player.tscn" id="1_8llw3"]
+[ext_resource type="PackedScene" uid="uid://8yqcs8vdtxt0" path="res://blue_gem.tscn" id="2_snmdc"]
+[ext_resource type="PackedScene" uid="uid://b6iesb8enaqqa" path="res://yellow_gem.tscn" id="3_yit65"]
+[ext_resource type="PackedScene" uid="uid://snui45lyu5pe" path="res://red_gem.tscn" id="4_xf82m"]
+[ext_resource type="PackedScene" uid="uid://c5ujkio4vv1va" path="res://green_gem.tscn" id="5_boy14"]
+[ext_resource type="PackedScene" uid="uid://c11bqht7q0lym" path="res://wall.tscn" id="6_61b4p"]
+
+[node name="World" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_8llw3")]
+position = Vector2(548, 328)
+collision_mask = 2
+
+[node name="Area2D" parent="." instance=ExtResource("3_yit65")]
+position = Vector2(244, 372)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D2" parent="." instance=ExtResource("3_yit65")]
+position = Vector2(107, 77)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D3" parent="." instance=ExtResource("3_yit65")]
+position = Vector2(845, 527)
+collision_layer = 2
+collision_mask = 0
+
+[node name="blueGem" parent="." instance=ExtResource("2_snmdc")]
+position = Vector2(855, 104)
+collision_layer = 2
+collision_mask = 0
+
+[node name="blueGem2" parent="." instance=ExtResource("2_snmdc")]
+position = Vector2(1081, 370)
+collision_layer = 2
+collision_mask = 0
+
+[node name="blueGem3" parent="." instance=ExtResource("2_snmdc")]
+position = Vector2(437, 187)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D4" parent="." instance=ExtResource("4_xf82m")]
+position = Vector2(369, 546)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D5" parent="." instance=ExtResource("4_xf82m")]
+position = Vector2(85, 307)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D6" parent="." instance=ExtResource("4_xf82m")]
+position = Vector2(997, 172)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D7" parent="." instance=ExtResource("4_xf82m")]
+position = Vector2(710, 390)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D8" parent="." instance=ExtResource("5_boy14")]
+position = Vector2(82, 552)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D9" parent="." instance=ExtResource("5_boy14")]
+position = Vector2(296, 109)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D10" parent="." instance=ExtResource("5_boy14")]
+position = Vector2(771, 186)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D11" parent="." instance=ExtResource("5_boy14")]
+position = Vector2(1043, 531)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D12" parent="." instance=ExtResource("5_boy14")]
+position = Vector2(1291, 100)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D13" parent="." instance=ExtResource("4_xf82m")]
+position = Vector2(1249, 308)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D14" parent="." instance=ExtResource("3_yit65")]
+position = Vector2(1435, 466)
+collision_layer = 2
+collision_mask = 0
+
+[node name="blueGem4" parent="." instance=ExtResource("2_snmdc")]
+position = Vector2(1249, 575)
+collision_layer = 2
+collision_mask = 0
+
+[node name="blueGem5" parent="." instance=ExtResource("2_snmdc")]
+position = Vector2(295, 770)
+collision_layer = 2
+collision_mask = 0
+
+[node name="blueGem6" parent="." instance=ExtResource("2_snmdc")]
+position = Vector2(1003, 861)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D15" parent="." instance=ExtResource("5_boy14")]
+position = Vector2(651, 722)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D16" parent="." instance=ExtResource("5_boy14")]
+position = Vector2(1382, 791)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D17" parent="." instance=ExtResource("4_xf82m")]
+position = Vector2(1062, 717)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D18" parent="." instance=ExtResource("4_xf82m")]
+position = Vector2(488, 925)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D19" parent="." instance=ExtResource("3_yit65")]
+position = Vector2(109, 797)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D20" parent="." instance=ExtResource("3_yit65")]
+position = Vector2(1684, 244)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D21" parent="." instance=ExtResource("3_yit65")]
+position = Vector2(1345, 922)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D22" parent="." instance=ExtResource("4_xf82m")]
+position = Vector2(1620, 676)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Area2D23" parent="." instance=ExtResource("5_boy14")]
+position = Vector2(1708, 410)
+collision_layer = 2
+collision_mask = 0
+
+[node name="blueGem7" parent="." instance=ExtResource("2_snmdc")]
+position = Vector2(1505, 177)
+collision_layer = 2
+collision_mask = 0
+
+[node name="blueGem8" parent="." instance=ExtResource("2_snmdc")]
+position = Vector2(1620, 946)
+collision_layer = 2
+collision_mask = 0
+
+[node name="wall" parent="." instance=ExtResource("6_61b4p")]
+position = Vector2(1162, 330)
+scale = Vector2(0.160002, 0.341209)
