@@ -12,6 +12,7 @@ func _ready():
 func _process(delta):
 	var input_vector = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	position += input_vector * speed * delta
+	#move_and_slide()
 	
 	if input_vector == Vector2.ZERO:
 		animation_player.play(facing)

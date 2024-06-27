@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://bttyulja8qsnc"]
+[gd_scene load_steps=6 format=3 uid="uid://bttyulja8qsnc"]
 
 [ext_resource type="PackedScene" uid="uid://dm272mya6hdcw" path="res://player.tscn" id="1_8llw3"]
 [ext_resource type="PackedScene" uid="uid://8yqcs8vdtxt0" path="res://blue_gem.tscn" id="2_snmdc"]
 [ext_resource type="PackedScene" uid="uid://b6iesb8enaqqa" path="res://yellow_gem.tscn" id="3_yit65"]
 [ext_resource type="PackedScene" uid="uid://snui45lyu5pe" path="res://red_gem.tscn" id="4_xf82m"]
 [ext_resource type="PackedScene" uid="uid://c5ujkio4vv1va" path="res://green_gem.tscn" id="5_boy14"]
-[ext_resource type="PackedScene" uid="uid://c11bqht7q0lym" path="res://wall.tscn" id="6_61b4p"]
 
 [node name="World" type="Node2D"]
 
@@ -167,7 +166,3 @@ collision_mask = 0
 position = Vector2(1620, 946)
 collision_layer = 2
 collision_mask = 0
-
-[node name="wall" parent="." instance=ExtResource("6_61b4p")]
-position = Vector2(1162, 330)
-scale = Vector2(0.160002, 0.341209)

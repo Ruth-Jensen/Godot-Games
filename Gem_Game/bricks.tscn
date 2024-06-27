@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://2qwbmibj25sr"]
+
+[ext_resource type="Texture2D" uid="uid://cleoqfti7frpb" path="res://9660774-naadloze-patroon-baksteen-stenen-muur-rood-oude-textuur-wallpaper-voor-ui-game-vector.jpg" id="1_pw8cj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c7i88"]
+size = Vector2(100, 158)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.84217e-14, 0)
+scale = Vector2(0.0520833, 0.0822917)
+texture = ExtResource("1_pw8cj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_c7i88")
